@@ -41,6 +41,7 @@ public class RittenDeserializer extends StdDeserializer<Ritten> {
                 String ritId = ritNames.next();
                 TreeNode ritNode = rides.get(ritId);
                 Rit rit = objectMapper.treeToValue(ritNode, Rit.class);
+                rit.setRitId(ritId);
                 ritten.getRitten().add(rit);
             }
             return ritten;

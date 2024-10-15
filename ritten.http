@@ -1,3 +1,5 @@
+###
+
 GET http://localhost:8080/api/v1/ritten
 Accept: application/json
 
@@ -5,3 +7,48 @@ Accept: application/json
 
 GET http://localhost:8080/api/v1/ritten/afstand/2024
 Accept: application/json
+
+###
+PUT http://localhost:8080/api/v1/ritten/correct-ritten
+Accept: application/json
+
+###
+POST http://localhost:8080/api/v1/ritten/verwerk
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file-data"; filename="ritten.txt"
+Content-Type: text/plain
+
+< /Users/michel/OneDrive/Bureaublad/ritten.txt
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+#PUT https://api.informer.eu/v1/ride/1095777/
+#accept: application/json
+#apikey: q5qjLIKnayAQpyeciytlQtrKPmXxJjg1FwEr9p69I7PWWtX7lLJ
+#securitycode: 60006000
+#Content-Type: application/json
+#
+#{
+#  "vehicle_id": "43147",
+#  "date": "2024-02-14",
+#  "from_relation": "0",
+#  "from_country": "NL",
+#  "from_zip": "3521 BJ",
+#  "to_relation": "0",
+#  "to_country": "NL",
+#  "to_zip": "6824PW",
+#  "distance": "70",
+#  "type": "Business",
+#  "description": "hoppa",
+#  "comment": ""
+#}
+
+###
+
+GET https://api.informer.eu/v1/ride/1095776
+apikey: q5qjLIKnayAQpyeciytlQtrKPmXxJjg1FwEr9p69I7PWWtX7lLJ
+securitycode: 60006000
+Content-Type: application/json
+

@@ -1,23 +1,20 @@
 package com.meeuwissen.rittenregistratie.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
 
-@Data
+@Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Rit {
-    @JsonProperty("rit_id")
-    private String ritId;
-
+public class RitUpdate {
     @JsonProperty("vehicle_id")
     private String voertuigId;
 
     @JsonProperty("date")
-    private LocalDate datum;
+    private String datum;
 
     @JsonProperty("from_relation")
     private String fromRelation;
@@ -40,9 +37,12 @@ public class Rit {
     @JsonProperty("distance")
     private String afstand;
 
+    @JsonProperty
     private String type;
 
+    @JsonProperty
     private String description;
 
+    @JsonProperty
     private String comment;
 }

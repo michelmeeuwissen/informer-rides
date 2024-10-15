@@ -1,0 +1,3 @@
+# datum; postcode_van; postcode_naar; kilometers; omschrijving;   --  Croeselaan 1 3521 BJ, Pettelaarspark 5216 PT
+29-10-2024; 6824 PW; 5216 PT; 74; Naar Volksbank Den Bosch vanaf Paasberglaan 33
+29-10-2024; 5216 PT; 6824 PW; 74; Naar Paasberglaan 33 vanaf Volksbank Den Bosch
